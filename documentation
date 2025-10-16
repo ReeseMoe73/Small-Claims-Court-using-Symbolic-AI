@@ -1,0 +1,13 @@
+The apparatus takes the generated contracts and uses AI to progress the judgment process. First, the system attempts to predict the type of case by reviewing the generated agreements stored in the system database. This prediction method, based on Bayes Theorem describes the probability of an event based on prior knowledge or other certain known probabilities of that event (Sharma, 2020). The Bernoulli Naive model scans the document for characteristics associated with a class label. For example, if the system views terms as landlord, tenant, money owed, broken contract, it predicts the case to fall under the eviction category.  
+ 
+This model functions because the network is trained on data that resides in the X array group, representing the various small claim court types using binary features. The Y indicates the encoded court types, such as debt collection, eviction, and contract dispute. The Bernoulli model learns the features using a presence/absence attribute. The model predicts the court type using the Bayes Theorem to predict the most likely court type. 
+
+
+
+System Requirements
+
+Python 3.8+
+
+Libraries: scikit-learn
+
+ RUN THE SCRIPT python "Small claims AI app.py"
